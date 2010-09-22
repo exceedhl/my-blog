@@ -1,8 +1,0 @@
-#title This is a test muse !
-#layout test
-
-* Header 1
-我们的祖国是花园。
-This is a test
-
-** My god
