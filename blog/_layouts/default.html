@@ -1,83 +1,44 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="Tom Preston-Werner" />
-   <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="Huang Liang" />
+    <title>{{ page.title }}</title>
 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="/styles/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/styles/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="/styles/ie.css"
+    type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" media="screen">
+  </head>
 
-   <!-- Typekit -->
-   <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
-   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-</head>
-<body>
-
-<!-- ClickTale Top part -->
-<script type="text/javascript">
-var WRInitTime=(new Date()).getTime();
-</script>
-<!-- ClickTale end of Top part -->
-
-<div class="site">
-  <div class="title">
-    <a href="/">Tom Preston-Werner</a>
-    <a class="extra" href="/">home</a>
-  </div>
-  
-  {{ content }}
-  
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Tom Preston-Werner<br />
-        Cofounder of <a href="http://github.com/">GitHub</a><br />
-        tom@mojombo.com
-      </p>
+  <body>
+    <div style="background-color: #d9b860; height: 5px"></div>
+    <div class="container">
+      <div id="sitename"><a href="/" class="nodecoration"><img src="/images/sitename.png"/></a></div>
+      <div class="prepend-1 span-17">
+	{{ content }}
+      </div>
+      <div class="prepend-1 span-5 last sidebar">
+	<a href="/archives.html" class="nodecoration"><img src="/images/archives.png"/></a>
+	<!--a href="/topics.html" class="nodecoration"><img src="/images/topics.png"/></a-->
+	<ul class="menu">
+	  {% for topic in site.iterable.categories %}
+	  <li><a href="/categories/{{topic.name}}/index.html">{{ topic.name }}</a></li>
+	  {% endfor %}
+	</ul>
+	<hr class="space"/>
+	<div class="infobox">
+	  <div><img class="icon" src="/images/rss.png"/><a href="/atom.xml">RSS feed</a></div>
+	  <div><img class="icon" src="/images/email.png"/><a href="mailto:exceedhl@gmail.com">Email me</a></div>
+	</div>
+	</ul>
+      </div>
     </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/mojombo/">github.com/mojombo</a><br />
-        <a href="http://twitter.com/mojombo/">twitter.com/mojombo</a><br />
-        <a href="http://flickr.com/photos/mojombo/">flickr.com/photos/mojombo</a>
-      </p>
-    </div>
-    <div class="rss">
-      <a href="http://feeds.feedburner.com/tom-preston-werner">
-        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
-      </a>
-    </div>
-  </div>
-</div>
-
-<a href="http://github.com/mojombo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
-
-<!-- ClickTale Bottom part -->
-<div id="ClickTaleDiv" style="display: none;"></div>
-<script type="text/javascript">
-if(document.location.protocol!='https:')
-  document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRb.js'%20type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-if(typeof ClickTale=='function') ClickTale(206,0.3,"www03");
-</script>
-<!-- ClickTale end of Bottom part -->
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-6016902-1");
-pageTracker._trackPageview();
-</script>
-<!-- Google Analytics end -->
-
-</body>
+<hr class="space"/>
+<hr class="space"/>
+  </body>
 </html>

@@ -1,0 +1,72 @@
+#sitename {
+    margin: 30px 0 130px 40px;
+}
+
+h1 {
+    font-family: Eurostile, Tahoma, Arial, sans-serif;
+    font-size: 28px;
+}
+
+.post-metadata {
+    color: #9f9f9f;
+    font-style: italic;
+    margin-bottom: 0.8em;
+}
+
+body {
+    font-family: Platino, Books Antiqua, Times New Roman, serif;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+ul.menu {
+    list-style: none outside;
+    padding-left: 0;
+}
+
+ul.menu li {
+    font-size: 16px;
+}
+
+img.icon {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+.infobox a {
+    margin-left: 5px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+
+a:link, a:visited {
+    color: #000;
+}
+
+a:hover {
+    color: #d9b860;
+}
+
+a.nodecoration {
+    border-bottom: none;
+}
+
+.contents {
+    border: 1px solid #999;
+    border-width: 1px 0;
+    background-color: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+}

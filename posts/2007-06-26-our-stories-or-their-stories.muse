@@ -1,0 +1,34 @@
+#title Our stories? Their stories?
+#layout post
+#date 2007/06/20
+#category Agile
+
+Working with customers as an agile consultant in these days, I found
+that using agile software development practices to manage this
+consulting project works very well. By turning training, coaching and
+implementation works into stories and plan with customers, utilizing
+various best practices such as standup, retrospective etc. that we
+have been always doing in our software projects, we have made our work
+transparent to the customers and our planning very adaptable and
+responsive. A group of customers from different projects are a part of
+our project team. They acts as customers and project team members as
+well.
+
+One issue that I found recently is about some coaching and
+implementation stories. For those kinds of job we have to work with
+our customer people for a period of time, and they usually have their
+own daily job to do. Our customers have already used stories to
+represent the requirement so they have their stories to finish. At the
+beginning I felt that we are interrupt their working and sometimes
+they do not have time to work with us on our coaching or
+implementation stories. We are like sort of external forces not
+belonging to their projects. I am not saying our customers are unlike
+to work with us, on the contrary they are very willing to work with
+us. The problem is just that we were not involved into their projects
+though we have involved our customers into our consulting project.
+
+Things started going well after we turn our stories into their
+stories.  For everything we have to work with them, we try to create a
+story in their project and the people who are assigned to that story
+will have dedicated time to work with us, which also improved
+communication between us and customers.

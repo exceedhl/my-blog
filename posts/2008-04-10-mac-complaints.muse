@@ -1,0 +1,17 @@
+#title Mac complaints
+#date 2008/04/10
+#category Mac
+#layout post
+
+I just got a Macbook pro recently. Being a long time user of Windows
+and Linux, I can not help pointing out something that this new Mac
+computer makes me unhappy, though it has many things pleased me.
+
+ - No control key at right side
+ - No delete key, the delete key on the keyboard is actually backspace
+   on Microsoft keyboard, you have to use “mac” + “delete” to perform
+   the deleting
+ - No home, end, pageup and pagedown keys
+ - No obvious “cut file” functionality available in Finder
+ - No syntax highlight in Terminal defaultly
+
