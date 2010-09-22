@@ -52,7 +52,7 @@ a {
 }
 
 a:link, a:visited {
-    color: #000;
+    color: #d9b860;
 }
 
 a:hover {
@@ -63,10 +63,20 @@ a.nodecoration {
     border-bottom: none;
 }
 
-.contents {
+pre.example, .contents {
     border: 1px solid #999;
     border-width: 1px 0;
     background-color: #eee;
     padding: 1em;
     margin-bottom: 1em;
+}
+
+.contents a {
+    color: #000;
+    font-weight: normal;
+}
+
+pre.example {
+    border-width: 1px 1px;
+    overflow: auto;
 }

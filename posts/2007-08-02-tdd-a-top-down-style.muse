@@ -14,6 +14,8 @@ take the responsibility of writing acceptance tests and developers are
 only writing unit tests. I would like to advocate a top-down TDD style
 starting from user stories and ending at production code for TDDers.
 
+<contents>
+
 * TDD from starting from user stories
 
 ** What
@@ -375,7 +377,7 @@ start to write tests for them:
 <example>
 <src lang="ruby">
 def test_registered_user_should_able_to_sign_in_and_redirect_to_home_as_default
-    post :login, :name =&gt; "someone", :password =&gt; "password"
+    post :login, :name => "someone", :password => "password"
     assert_equal "Welcome, someone!", flash[:notice]
 end
 </src>
@@ -390,7 +392,7 @@ controller action:
 def signin
     user = User.authenticate(params[:name], params[:password])
     flash[:notice] = "Welcome, " + user.nickname + "!"
-    redirect_to :controller =&gt; "home"
+    redirect_to :controller => "home"
 end
 </src>
 </example>
