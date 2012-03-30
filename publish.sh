@@ -3,4 +3,5 @@ ditto blog output/blog
 ditto output/posts output/blog/_posts
 jekyll output/blog output/site
 
-scp -r output/site/* lhuang@hl.thoughtworkers.org:~/hl.thoughtworkers.org/
+rsync -avz output/site/ lhuang@hl.thoughtworkers.org:~/hl.thoughtworkers.org/
+# scp -r output/site/* lhuang@hl.thoughtworkers.org:~/hl.thoughtworkers.org/
